@@ -20,6 +20,6 @@ public class Classroom {
         }
         double avg = total/num;
         return avg;
-        //oof
+        //ooff
     }
 }

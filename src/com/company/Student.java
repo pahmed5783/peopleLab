@@ -9,13 +9,18 @@ public class Student extends Person{
         super("studentFirst", "studentLast");
         this.GPA = GPA;
         this.color = color;
+        this.subject = subject;
     }
 
     public double getGPA(){
         return GPA;
     }
-    public double getColor;
-    public String toString(){
-
+    public String getColor(){
+        return color;
     }
+    public String getSubject() {
+        return subject;
+    }
+    //public void getGPA(double GPA){return this.GPA;}
+
 }

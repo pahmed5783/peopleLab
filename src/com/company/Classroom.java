@@ -4,7 +4,6 @@ public class Classroom {
     Student[] students;
     Teacher teacher;
     public Classroom (Student[] students, Teacher teacher){
-        super("Classroom");
         this.students = students;
         this.teacher = teacher;
     }

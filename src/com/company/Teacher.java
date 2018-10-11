@@ -1,20 +1,20 @@
 package com.company;
 
 public class Teacher extends Person {
-    private String Subject;
-    private String Title;
+    private String subject;
+    private String title;
 
-    public Teacher(String Subject, String Title, String firstName, String familyName) {
-        super(firstName, familyName);
-        this.Subject = Subject;
-        this.Title = Title;
+    public Teacher(String Subject, String Title) {
+        super("studentFirst", "studentLast");
+        this.subject = subject;
+        this.title = title;
     }
 
     public String getSubject() {
-        return Subject;
+        return subject;
     }
 //hee
     public String toString() {
-        return this.Title + "." + " " + this.getFamilyName();
+        return this.title + "." + " " + this.getFamilyName();
     }
 }

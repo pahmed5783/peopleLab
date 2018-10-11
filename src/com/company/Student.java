@@ -2,21 +2,21 @@ package com.company;
 
 public class Student extends Person{
     private double GPA;
-    private String gender;
+    private String color;
     private String subject;
 
     public Student(double GPA, String color, String subject){
         super("studentFirst", "studentLast");
         this.GPA = GPA;
-        this.gender = gender;
+        this.color = color;
         this.subject = subject;
     }
 
     public double getGPA(){
         return this.GPA;
     }
-    public String getGender(){
-        return this.gender;
+    public String getColor(){
+        return this.color;
     }
     public String getSubject() {
         return this.subject;

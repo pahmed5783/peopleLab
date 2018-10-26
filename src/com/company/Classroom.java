@@ -3,6 +3,7 @@ package com.company;
 public class Classroom {
     Student[] students;
     Teacher teacher;
+    Students[][] seatingChart = new Student[6][6];
     public Classroom (Student[] students, Teacher teacher){
         this.students = students;
         this.teacher = teacher;

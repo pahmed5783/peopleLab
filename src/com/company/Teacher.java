@@ -1,20 +1,42 @@
 package com.company;
 
 public class Teacher extends Person {
-    private String subject;
-    private String title;
+    // Fields
+    private String subject, title;
 
-    public Teacher(String Subject, String Title) {
-        super("studentFirst", "studentLast");
+    // Constructor
+    public Teacher(String firstName, String familyName, String subject, String title)
+    {
+        super(firstName, familyName);
         this.subject = subject;
         this.title = title;
     }
 
-    public String getSubject() {
+    // Methods
+
+    // Getters
+    public String getSubject()
+    {
         return subject;
     }
-//hee
-    public String toString() {
-        return this.title + "." + " " + this.getFamilyName();
+    public String getTitle() {
+        return title;
+    }
+
+    // Setters
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    /**
+     * @return "Title. FamilyName"
+     */
+
+    public String toString()
+    {
+        return title + ". " + getFamilyName();
     }
 }

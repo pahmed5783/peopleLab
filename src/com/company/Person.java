@@ -1,37 +1,39 @@
 package com.company;
 
-public class Person {
-        private String firstName, familyName;
+public abstract class Person {
+    // Fields
+    private String firstName, familyName;
 
-        public Person(String firstName, String familyName) {
-            this.firstName = firstName;
-            this.familyName = familyName;
-        }
+    // Constructor
+    public Person(String firstName, String familyName) {
+        this.firstName = firstName;
+        this.familyName = familyName;
+    }
 
-        public String getFirstName() {
-            return firstName;
-        }
+    // Methods
 
-        public void setFirstName(String firstName) {
-            this.firstName = firstName;
-        }
+    // Getters
+    public String getFirstName() {
+        return firstName;
+    }
+    public String getFamilyName() {
+        return familyName;
+    }
 
-        public String getFamilyName() {
-            return familyName;
-        }
+    // Setters
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public void setFamilyName(String familyName) {
+        this.familyName = familyName;
+    }
 
-        public void setFamilyName (String familyName) {
-            this.familyName = familyName;
-        }
+    /**
+     * @param p Person object to compare to.
+     * @return true if first and family name are equal.
+     */
 
-        public boolean equals(Person person) {
-            if (this.firstName.equals(person.getFirstName()) && this.familyName.equals(person.getFamilyName())) {
-                return true;
-            } else {
-                return false;
-            }
-
-        }
-
+    public boolean equals(Person p) {
+        return (p.firstName.equals(firstName)) && (p.familyName.equals(familyName));
+    }
 }
-
